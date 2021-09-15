@@ -5,6 +5,7 @@ public class Opel implements Car {
     String color;
     String brand = "Opel";
     String regNumber;
+    String engine;
 
     public Opel(String color) {
         this.color = color;
@@ -24,6 +25,11 @@ public class Opel implements Car {
     @Override
     public String getRegistrationNumber() {
         return regNumber;
+    }
+
+    @Override
+    public String getEngine() {
+        return engine;
     }
 
     public String setRegistrationNumber() {

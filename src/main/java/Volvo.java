@@ -5,6 +5,7 @@ public class Volvo implements Car {
     String color;
     String brand = "Volvo";
     String regNumber;
+    String engine;
 
     public Volvo(String color) {
         this.color = color;
@@ -24,6 +25,11 @@ public class Volvo implements Car {
     @Override
     public String getRegistrationNumber() {
         return regNumber;
+    }
+
+    @Override
+    public String getEngine() {
+        return engine;
     }
 
     public String setRegistrationNumber() {
