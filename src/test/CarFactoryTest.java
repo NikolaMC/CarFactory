@@ -20,7 +20,7 @@ public class CarFactoryTest {
     public void test_get_car_brand_success() throws CarException { assertEquals("Volvo", carFactory.getCar("Yellow").getBrand()); }
 
     @Test
-    public void test_get_car_brand_fail() {
+    public void test_get_car_brand_fail() throws CarException{
         CarException carException = assertThrows(CarException.class, () -> carFactory.getCar("Black"));
         assertEquals("Not a valid brand", carException.getMessage());
     }
