@@ -31,7 +31,7 @@ public class CarFactoryTest {
     }
 
     @Test
-    public void test_get_non_existing_car_brand_fail() throws CarException {
+    public void test_get_non_existing_car_brand_fail() {
 
         CarException carException = assertThrows(CarException.class, () -> carFactory.createCar("red", "Bmw"));
         assertEquals("Not a valid brand", carException.getMessage());
