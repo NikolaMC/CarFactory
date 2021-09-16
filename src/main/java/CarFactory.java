@@ -2,7 +2,7 @@ package main.java;
 
 public class CarFactory {
 
-    private String[] brands = {"Volvo", "Opel"};
+    private String[] brands = {"Volvo", "Opel", "a"};
     private String[] engines = {"Engine1", "Engine2"};
 
     private String getAlphaNumericString() {
