@@ -1,21 +1,26 @@
 package main.java;
 
 public class CarFactory {
-    public Car getCar(String brand) throws CarException {
-        switch(brand) {
-            case "Opel": {
-                Opel opel = new Opel("Red");
-                System.out.println(opel.getRegistrationNumber());
-                return opel;
+
+
+    public Car createCar(String color, String brand) throws CarException {
+
+
+        switch( brand.toLowerCase() ){
+            case "opel": {
+                 return new Opel(color);
             }
-            case "Volvo": {
-                Volvo volvo = new Volvo("White");
-                System.out.println(volvo.getRegistrationNumber());
-                return volvo;
+            case "volvo": {
+                return  new Volvo(color);
             }
             default: {
                 throw new CarException("Not a valid brand");
             }
         }
+    }
+    public String getCar(String brand, String color){
+
+
+        return brand + color;
     }
 }

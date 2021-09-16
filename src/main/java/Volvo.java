@@ -14,7 +14,7 @@ public class Volvo implements Car {
 
     @Override
     public String getBrand() {
-        return brand;
+        return brand.toLowerCase();
     }
 
     @Override
